@@ -21,7 +21,14 @@ export default function Dashboard() {
           <p className="text-[11px] font-semibold text-on-surface-variant uppercase tracking-widest mb-1">Março 2026</p>
           <h1 className="text-[22px] sm:text-[26px] font-bold text-on-surface tracking-tight">Dashboard</h1>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 flex-wrap">
+          <button
+            onClick={() => navigate('/modelo-email')}
+            className="flex items-center gap-2 px-4 py-2 bg-primary rounded-xl text-[13px] font-medium text-on-primary hover:bg-primary-dim transition-colors"
+          >
+            <span className="material-symbols-outlined" style={{ fontSize: 16 }}>mail</span>
+            Ver modelo de e-mail
+          </button>
           <button className="flex items-center gap-2 px-4 py-2 bg-surface-container-lowest rounded-xl text-[13px] font-medium text-on-surface-variant hover:bg-surface-container transition-colors border border-outline-variant/40">
             <span className="material-symbols-outlined" style={{ fontSize: 16 }}>calendar_month</span>
             Jan – Mar 2026

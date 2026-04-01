@@ -8,6 +8,7 @@ import Fechamento from './pages/Fechamento'
 import Configuracoes from './pages/Configuracoes'
 import CentralAjuda from './pages/CentralAjuda'
 import Documentacao from './pages/Documentacao'
+import ModeloEmail from './pages/ModeloEmail'
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="/configuracoes" element={<Configuracoes />} />
           <Route path="/ajuda" element={<CentralAjuda />} />
           <Route path="/documentacao" element={<Documentacao />} />
+          <Route path="/modelo-email" element={<ModeloEmail />} />
         </Route>
       </Routes>
     </BrowserRouter>
